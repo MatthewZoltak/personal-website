@@ -1,14 +1,14 @@
 export default {
-    name: "project",
-    title: "Project",
+    name: "work",
+    title: "Work",
     type: "document",
     fields:[
         {
-            name: "title",
+            name: "company",
             type: "string",
         },
         {
-            name: "company",
+            name: "title",
             type: "string",
         },
         {
@@ -16,7 +16,7 @@ export default {
             type: "string",
         },
         {
-            name: "enddate",
+            name: "finishdate",
             type: "string",
         },
         {
@@ -31,19 +31,6 @@ export default {
         {
             name: "link",
             type: "url",
-        },
-        {
-            name: "tags",
-            type: "array",
-            of: [
-                {
-                    type:"string",
-                },
-            ],
-            options: {
-                layout: "tags"
-            }
-
         }
     ]
 }

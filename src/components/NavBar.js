@@ -10,23 +10,23 @@ export default function NavBar(){
                     <NavLink to="/"
                      exact 
                      activeClassName="text-white"
-                     className="inline-flex items-center py-6 px3 mr-4 text-blue-100 font-bold cursive tracking-widest">
+                     className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 font-bold cursive tracking-widest" activeClassName="text-blue-100 bg-blue-700">
                         Matthew
                     </NavLink>
                     <NavLink to="/work" 
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200" activeClassName="text-blue-100 bg-blue-700">
-                        Experience
+                        Work Experience
                     </NavLink>
                     <NavLink to="/project" className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200" activeClassName="text-blue-100 bg-blue-700">
                         Projects
                     </NavLink>
-                    <NavLink to="/about" className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200" activeClassName="text-blue-100 bg-blue-700">
-                        About
+                    <NavLink to="/skills" className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200" activeClassName="text-blue-100 bg-blue-700">
+                        Skills
                     </NavLink>
                 </nav>
                 <div className="inline-flex py-3 px-3 my-6">
                     <SocialIcon url="https://github.com/MatthewZoltak" className="mr-4" target="_blank" fgColor="#fff" style={{height: 45, width:45}}/>
-                    <SocialIcon url="linkedin.com/in/matthew-zoltak-278b83158" className="mr-4" target="_blank" fgColor="#fff" style={{height: 45, width:45}}/>
+                    <SocialIcon url="https://linkedin.com/in/matthew-zoltak-278b83158" className="mr-4" target="_blank" fgColor="#fff" style={{height: 45, width:45}}/>
                 </div>
             </div>
         </header>

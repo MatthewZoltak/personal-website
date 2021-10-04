@@ -19,8 +19,8 @@ export default function WorkExperience(){
     return (
     <main className="bg-blue-100 min-h-screen p-12">
         <section className="container mx-auto">
-            <h1 className="text-5xl flex justify-center cursive">Work Experience</h1>
-            <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my work experience page</h2>
+            <h1 className="text-5xl flex justify-center cursive">Skills</h1>
+            <h2 className="text-lg text-gray-600 flex justify-center mb-12">Here are my skills I have acquired throughout my engineering career</h2>
             {/* <div className="grid grid-cols-1 gap-8"> */}
             <section className="grid grid-cols-1 gap-8">
                 {experienceData && experienceData.map((work, index)=> (

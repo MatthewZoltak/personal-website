@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react"
 import sanityClient from "../client.js"
+import BlockContent from "@sanity/block-content-to-react";
 
 
 export default function Project(){
@@ -7,9 +8,11 @@ export default function Project(){
     useEffect(()=> {
         sanityClient.fetch(`*[_type == "project"]{
             title,
-            description,
-            date,
+            body,
+            startdate,
+            enddate,
             place,
+            company,
             link,
             tags
         }`).then((data)=> setProjectData(data)).catch(console.error)
@@ -21,7 +24,7 @@ export default function Project(){
                 <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my Projects Page</h2>
                 <section className="grid grid-cols-2 gap-8">
-                    {projectData && projectData.map((project, index)=> (
+                {projectData && projectData.map((project, index)=> (
                     <article className="relative rounded-lg shadow-xl bg-white p-16">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-blue-700">
                             <a 
@@ -35,14 +38,17 @@ export default function Project(){
                         </h3>
                         <div className="text-gray-500 text-xs space-x-4">
                             <span>
-                                <strong className="font-bold">Finished on</strong>:{" "}
-                                {new Date(project.date).toLocaleDateString()}
+                                <strong className="font-bold">Date:</strong> {" "}
+                                {new Date(project.startdate).toLocaleDateString()}
+                                <strong className="font-bold"></strong> - {" "}
+                                {new Date(project.enddate).toLocaleDateString()}
                             </span>
                             <span>
-                                <strong className="font-bold">Company</strong>:{" "}
-                                {project.place}
+                                <strong className="font-bold">{project.company}</strong>
+                                
                             </span>
-                            <p className="my-6 text-lg text-gray-700 leading-relaxed">{project.description}</p>
+                            {/* <BlockContent blocks={project.body} projectId="9cs54w69" dataset="production"/> */}
+                            <p className="my-6 text-lg text-gray-700 leading-relaxed"><BlockContent blocks={project.body} projectId="9cs54w69" dataset="production"/></p>
                             <a href={project.link} rel="noopener noreferrer" target="_blank" className="text-blue-500 font-bold hover:underline hover:text-blue-400">
                             View The Project{" "}
                             <span role="img" aria-label="right pointer">👉</span>
