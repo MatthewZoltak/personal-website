@@ -1,16 +1,8 @@
-import React, {useEffect, useState} from "react"
-import sanityClient from "../client.js"
+import React from "react"
 import image from "../matthew_zoltak.jpg"
 
 export default function About(){
-    // const [author, setAuthor] = useState(null);
 
-    // useEffect(() => {
-    //     sanityClient.fetch(`*[_type == "author"]{
-    //         name,
-    //         bio
-    //     }`).then((data) => )
-    // })
     return (
         <main className="relative">
             <div className="p-10 lg:pt-48 container mx-auto relative">
