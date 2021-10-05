@@ -38,10 +38,7 @@ export default function Project(){
                         </h3>
                         <div className="text-gray-500 text-xs space-x-4">
                             <span>
-                                <strong className="font-bold">Date:</strong> {" "}
-                                {new Date(project.startdate).toLocaleDateString()}
-                                <strong className="font-bold"></strong> - {" "}
-                                {new Date(project.enddate).toLocaleDateString()}
+                                <strong className="font-bold">Date: {project.startdate} - {project.enddate}</strong>
                             </span>
                             <span>
                                 <strong className="font-bold">{project.company}</strong>
@@ -50,7 +47,7 @@ export default function Project(){
                             {/* <BlockContent blocks={project.body} projectId="9cs54w69" dataset="production"/> */}
                             <p className="my-6 text-lg text-gray-700 leading-relaxed"><BlockContent blocks={project.body} projectId="9cs54w69" dataset="production"/></p>
                             <a href={project.link} rel="noopener noreferrer" target="_blank" className="text-blue-500 font-bold hover:underline hover:text-blue-400">
-                            View The Project{" "}
+                            View The Github Repository{" "}
                             <span role="img" aria-label="right pointer">👉</span>
                             </a>
                         </div>
