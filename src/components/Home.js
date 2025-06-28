@@ -21,9 +21,13 @@ export default function Home(){
                     </h1>
                     <h2 className="cursive text-xl text-blue-300 mb-4">Software Engineer</h2>
                     <div className="prose lg:prose-xs text-white">
-                         Hi!! My name is Matthew Zoltak. I am a Software Engineer Student at McGill University graduating in December 2021. I have
-                        worked for industry leading companies such as <span className="prose lg:prose-xl text-blue-500"> <b> Wix.com </b> </span>  and <span className="prose lg:prose-xl text-blue-500"> <b> Paysafe Group</b> </span>, as well as a small startup <span className="prose lg:prose-xl text-blue-500"> <b> Hypex.gg </b> </span>. 
-                        I love using code to create products, designing algorithms to solve complex issues, and colaborating with others.
+                        Hi!! My name is Matthew Zoltak. I am a Software Engineer with over 3.5 years of 
+                        industry experience designing, developing, and maintaining scalable systems in diverse environments, 
+                        from agile startups like <span className="prose lg:prose-xl text-blue-500"> <b> Elpha Secure </b> </span> to large enterprise corporations like 
+                        <span className="prose lg:prose-xl text-blue-500"> <b> Wix.com </b> </span> and 
+                        <span className="prose lg:prose-xl text-blue-500"> <b> Paysafe </b> </span>. Proven expertise in backend development, 
+                        microservices architecture, database design, and API implementation. An analytical problem-solver dedicated to building reliable, 
+                        high-performance software solutions and collaborating effectively within technical teams to drive project success.
                     </div>
                 </div>
             </section>
